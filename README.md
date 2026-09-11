@@ -32,7 +32,7 @@
 ### Key Learning
 
 1. HTML 태그
-   <h1> ~ <h3>, <p>, <div>, <a> 등 기본적인 html 태그들을 배웠고, 부가적으로 <div> 대신 사용 가능한 시맨틱 태그: <header>, <nav>, <aside>, <main> 등을 배웠다.
+   h1 ~ h3, p, div, a 등 기본적인 html 태그들을 배웠고, 부가적으로 div 대신 사용 가능한 시맨틱 태그: header, nav, aside, main 등을 배웠다.
 
 2. CSS
    id, class 선택자와 함께 margin, padding, border, width/height, position(absolute/relative) 등을 이용해 레이아웃 설정하는 방법을 익혔습니다.
