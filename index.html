@@ -4,14 +4,201 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dowon's Assignment 02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        padding: 96px 24px;
+        background: #f7f7f5;
+        color: #1c1c1c;
+        font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+        line-height: 1.55;
+      }
+
+      main {
+        max-width: 560px;
+        margin: 0 auto;
+      }
+
+      .identity {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 16px;
+        margin-bottom: 6px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+
+      .id {
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 13px;
+        color: #6b6b66;
+        white-space: nowrap;
+      }
+
+      .course {
+        margin: 0;
+        color: #6b6b66;
+        font-size: 15px;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #dedcd8;
+        margin: 32px 0;
+      }
+
+      .intro {
+        margin: 0 0 40px;
+        max-width: 46ch;
+      }
+
+      .intro p {
+        margin: 0 0 12px;
+      }
+
+      .intro p:last-child {
+        margin-bottom: 0;
+      }
+
+      ul.index {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul.index li {
+        border-top: 1px solid #dedcd8;
+      }
+
+      ul.index li:last-child {
+        border-bottom: 1px solid #dedcd8;
+      }
+
+      ul.index a {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 18px 4px;
+        text-decoration: none;
+        color: inherit;
+      }
+
+      ul.index a:hover .filename {
+        text-decoration: underline;
+      }
+
+      .swatch {
+        flex: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        border: 1px solid #dedcd8;
+      }
+
+      .swatch.nostyle {
+        background: transparent;
+      }
+
+      .swatch.style1 {
+        background: #04aa6d;
+        border-color: #04aa6d;
+      }
+
+      .swatch.style2 {
+        background: #000;
+        border-color: #84c754;
+      }
+
+      .label {
+        flex: 1 1 auto;
+        min-width: 0;
+      }
+
+      .filename {
+        display: block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 15px;
+      }
+
+      .desc {
+        display: block;
+        font-size: 13px;
+        color: #6b6b66;
+        margin-top: 2px;
+      }
+
+      footer {
+        margin-top: 48px;
+        font-size: 13px;
+        color: #6b6b66;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to Dowon's Homepage (22300650)</h1>
-    <p>Assignment 02 - HTML & CSS Practice</p>
-    <ul>
-      <li><a href="nostyle.html">No Style</a></li>
-      <li><a href="style1.html">Style 1</a></li>
-      <li><a href="style2.html">Style 2</a></li>
-    </ul>
+    <main>
+      <div class="identity">
+        <h1>Dowon's Homepage</h1>
+        <span class="id">22300650</span>
+      </div>
+      <p class="course">Open Source Studio, Assignment 02</p>
+
+      <hr />
+
+      <div class="intro">
+        <p>
+          This site is one HTML document rendered three times, each with a
+          different stylesheet attached to it.
+        </p>
+        <p>The markup never changes. Only the CSS does.</p>
+      </div>
+
+      <ul class="index">
+        <li>
+          <a href="nostyle.html">
+            <span class="swatch nostyle" aria-hidden="true"></span>
+            <span class="label">
+              <span class="filename">nostyle.html</span>
+              <span class="desc">No stylesheet, browser defaults</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="style1.html">
+            <span class="swatch style1" aria-hidden="true"></span>
+            <span class="label">
+              <span class="filename">style1.html</span>
+              <span class="desc">Stylesheet 1</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="style2.html">
+            <span class="swatch style2" aria-hidden="true"></span>
+            <span class="label">
+              <span class="filename">style2.html</span>
+              <span class="desc">Stylesheet 2</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <footer>HTML &amp; CSS Practice</footer>
+    </main>
   </body>
 </html>

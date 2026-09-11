@@ -58,7 +58,10 @@ Stylesheet 1 디자인을 적용했을 때 메뉴바의 너비가 잡히지 않�
 
 ### AI Usage
 
-Claude Code를 이용해 nostyle.html/style1.html/style2.html의 구조 일관성을 마지막에 점검했습니다. 수정해야할 부분을 찾아낸 후 수정작업을 진행할 때 반복적인 작업이 있다면 AI를 사용하여 소요 시간을 단축하였습니다 (예: div 태그 -> 시맨틱 태그들로 변경). 또한 과제 instruction을 첨부하여 혹시 빠트린것이 없는지 ai를 활용하여 점검하였습니다.
+1. 수정해야할 부분을 찾아낸 후 수정작업을 진행할 때 반복적인 작업이 있다면 AI를 사용하여 작업 시간을 단축하였습니다 (예: div 태그 -> 시맨틱 태그들로 변경).
+2. index.html의 디자인을 Claude Code를 사용하여 제작했습니다.
+3. Claude Code를 이용해 nostyle.html/style1.html/style2.html의 구조 일관성을 마지막에 점검했습니다.
+4. 과제 instruction을 첨부하여 혹시 빠트린것이 없는지 ai를 활용하여 점검하였습니다.
 
 ### Reflection
 
